@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/firstnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:text="FIRST NAME"/>
+
+    <TextView
+        android:id="@+id/lastnameTV"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstnameTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="LAST NAME"/>
+
+    <TextView
+        android:id="@+id/phoneTV"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastnameTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="PHONE NO." />
+    <TextView
+        android:id="@+id/chooseusernameTV"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="CHOOSE USERNAME"/>
+
+
+    <TextView
+        android:id="@+id/choosepassTV"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseusernameTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="CHOOSE PASSWORD"
+        />
+
+    <EditText
+        android:id="@+id/firstnameET"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:hint="firstname"
+        android:layout_toRightOf="@+id/firstnameTV"
+        android:ems="5"/>
+
+
+    <EditText
+        android:id="@+id/lastnameET"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lastnameTV"
+        android:layout_marginLeft="20dp"
+        android:hint="last name"
+        android:layout_below="@id/firstnameET"
+        android:ems="5"/>
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/phoneTV"
+        android:layout_marginLeft="20dp"
+        android:hint="phone"
+        android:layout_below="@+id/lastnameET"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/chooseusernameET"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:layout_toRightOf="@+id/chooseusernameTV"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/phoneET"
+        android:ems="5"/>
+    <EditText
+        android:id="@+id/choosepassET"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@+id/choosepassTV"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/chooseusernameET"
+        android:ems="5"/>
+    <Button
+        android:id="@+id/signupB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="SIGN UP"/>
+
+    <TextView
+        android:id="@+id/vfirstnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupB"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/vlastnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vfirstnameTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/vphoneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vlastnameTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/vchooseusernameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vphoneTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/vchoosepassTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/vchooseusernameTV"
+        android:textSize="15sp"
+        />    <RadioGroup
+    android:id="@+id/radiogroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MALE"
+
+
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEMALE"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTHER"/>
+
+
+</RadioGroup>
+
+</RelativeLayout>
